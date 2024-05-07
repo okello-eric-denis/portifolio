@@ -1,8 +1,15 @@
 import { memo } from 'react'
-import { Heading, Text, Stack, Link, Icon, Box } from '@chakra-ui/react'
+import { Heading, Text, Stack, Link, Icon, Box ,Input,Button,Textarea} from '@chakra-ui/react'
 import { motion, Variants } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { RiHeartPulseFill, RiCopyleftLine, RiGithubFill } from 'react-icons/ri'
+import {
+  FormControl,
+  FormLabel,
+  FormErrorMessage,
+  FormHelperText,
+} from '@chakra-ui/react'
+import styles from './styles.module.css'
 const rimuruVariant: Variants = {
   shake: {
     rotate: [0, 15, 0, -15, 0],
@@ -63,14 +70,29 @@ const GetInTouch = () => {
         >
           email
         </Link>
-        .
       </Text>
       <Box>
         <div>
           <Heading>
-          Contact Me 
+          Contact Form 
           </Heading>
         </div>
+        <FormControl>
+      <FormLabel>Name</FormLabel>
+       <Input type='text' 
+      placeholder='okello eric'/>
+      <FormLabel>Email address</FormLabel>
+      <Input type='email'
+        placeholder='user@domain.com'/>
+      <FormLabel>Subject</FormLabel>
+      <Input type='text' 
+      placeholder='Mobile App development'/>
+      <FormLabel>Message</FormLabel>
+      <Textarea placeholder='How may i help you'/> 
+      <Button className={styles.button}>
+        Submit
+      </Button>
+           </FormControl>
       </Box>
 
       <Box
