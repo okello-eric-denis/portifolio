@@ -52,15 +52,15 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
       </Heading>
       <Text variant="description">
         I`ve been coding professionally for {professionalYears} years now and
-        currently working as a <b>Software Engineer</b> that focuses on{' '}
-        <b>architecture</b>, <b>APIs</b>,{' '}
+        currently working as a <b>Robotic Process Automation Expert</b> that focuses on{' '}
+        <b>automating business processes</b>, <b>like</b>,{' '}
         <Tooltip
           label="Ha!. Or more accurately TECH DEBT"
           aria-label="Tech Debt?"
           hasArrow
         >
           <Text as="span" variant="emphasis">
-            <b>nitty-gritty business logics</b>
+            <b>web scraping </b>, <b>SEO generation</b>
           </Text>
         </Tooltip>{' '}
         and even <b>front end integration</b> stuff now, how time flies!

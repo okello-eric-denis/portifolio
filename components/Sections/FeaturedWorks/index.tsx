@@ -44,7 +44,7 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={1}
-            title="Tobira!"
+            title="CTN Pastor Training!"
             src="/works/tobira/IphoneX-tobira.webp"
             description="Japanese social media platform for travelers to show off their
           adventure to the world. I was incharge of Front end integration, made using React, Antd and Styled Components."
@@ -58,7 +58,7 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={2}
-            title="RSV"
+            title="Nyumba"
             description="RSV is a smart contract (ERC20) powered reservation system. I am incharge of backend using NET.Core 2.1."
             src="/works/rsv.webp"
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
