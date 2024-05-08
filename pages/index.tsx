@@ -5,6 +5,7 @@ import {
   Stack,
   Box,
   useBreakpointValue,
+  Image
 } from '@chakra-ui/react'
 import dynamic from 'next/dynamic'
 import Script from 'next/script'
@@ -18,6 +19,7 @@ import Experience from 'components/Sections/Experience'
 import FeaturedWorks from 'components/Sections/FeaturedWorks'
 import ScrollMore from 'components/Misc/ScrollMore'
 import { Article } from 'types/article'
+import blogs from '../public/blogs/index'
 // These are on bottom sections so no need to render it instantly
 const DevToArticles = dynamic(() => import('components/Sections/DevToArticles'))
 const GetInTouch = dynamic(() => import('components/Sections/GetInTouch'))
@@ -152,8 +154,9 @@ const Portfolio = ({ articles }: { articles: Article[] }): JSX.Element => {
 }
 
 export async function getStaticProps() {
-  const res = await fetch('https://dev.to/api/articles?username=klawingco')
-  const articles = await res.json()
+  // const res = await fetch('https://dev.to/api/articles?username=klawingco')
+  // const articles = await res.json()
+  const articles = blogs
   return {
     props: {
       articles,

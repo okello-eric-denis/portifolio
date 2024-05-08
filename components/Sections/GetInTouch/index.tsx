@@ -78,38 +78,39 @@ const GetInTouch = () => {
           </Heading>
         </div>
         <FormControl>
-      <FormLabel>Name</FormLabel>
-       <Input type='text' 
+      <FormLabel>Name
+      <Input type='text' 
       placeholder='okello eric'/>
-      <FormLabel>Email address</FormLabel>
+      </FormLabel>
+      <FormLabel>Email address
       <Input type='email'
-        placeholder='user@domain.com'/>
-      <FormLabel>Subject</FormLabel>
+      placeholder='user@domain.com'/>
+      </FormLabel>
+      <FormLabel>Subject
       <Input type='text' 
       placeholder='Mobile App development'/>
-      <FormLabel>Message</FormLabel>
+      </FormLabel>
+      <FormLabel>Message
       <Textarea placeholder='How may i help you'/> 
+      </FormLabel>
       <Button className={styles.button}>
         Submit
       </Button>
-           </FormControl>
+       </FormControl>
       </Box>
-
       <Box
         spacing={0.5}
         textAlign="center"
         fontFamily="monospace"
         paddingTop={{ base: 10, lg: 20, xl: 20 }}
-        paddingBottom={{ base: 5, lg: 18 }}
-      >
+        paddingBottom={{ base: 5, lg: 18 }}>
         <Link
           variant="description"
           textDecoration="none"
           rel="noreferrer"
           href="https://github.com/okello-eric-denis"
           target="_blank"
-          _focus={{ boxShadow: 'none' }}
-        >
+          _focus={{ boxShadow: 'none' }}>
           <Text as="span">
             <Icon as={RiGithubFill} h={6} w={6} /> <br />
             Designed and Made with <Icon as={RiHeartPulseFill} /> <br />

@@ -23,12 +23,12 @@ export const SocialMedias: SocialMedia[] = [
   },
   {
     label: 'Instagram',
-    href: 'https://www.instagram.com/kllawingco/',
+    href: 'https://www.instagram.com/e_cruise_',
     icon: FaInstagram,
   },
   {
     label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/marclawingco/',
+    href: 'https://www.linkedin.com/in/okello-eric',
     icon: FaLinkedin,
   },
   {
@@ -36,14 +36,14 @@ export const SocialMedias: SocialMedia[] = [
     href: 'https://stackoverflow.com/users/3867490/keysl',
     icon: FaStackOverflow,
   },
-  {
-    label: 'Youtube',
-    href: 'https://www.youtube.com/channel/UCV-MiUVsKJrKJKKfUK58nhg',
-    icon: FaYoutube,
-  },
+  // {
+  //   label: 'Youtube',
+  //   href: 'https://www.youtube.com/channel/UCV-MiUVsKJrKJKKfUK58nhg',
+  //   icon: FaYoutube,
+  // },
   {
     label: 'Github',
-    href: 'https://github.com/klawingco',
+    href: 'https://github.com/okello-eric-denis',
     icon: FaGithub,
   },
   {
