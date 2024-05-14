@@ -11,7 +11,7 @@ import { useEffect } from 'react'
 import { avatarAnimation } from 'config/animations'
 
 const AvatarImages = {
-  DarkMode: '/KL_avatar.png',
+  DarkMode: '/photo.jpg',
   LightMode: './KL_avatar_light.png',
 }
 
@@ -51,23 +51,23 @@ const Avatar = () => {
       >
         <ChkImage
           src={imgAvatar}
-          alt="KL Lawingco Avatar"
-          htmlWidth="250"
-          htmlHeight="250"
+          alt="Okello-Eric Avatar"
+          htmlWidth="500"
+          htmlHeight="500"
           margin="auto"
           fallback={<SkeletonCircle height="100%" width="100%" />}
         />
-        <Text textAlign="center" fontSize="smaller" variant="description">
-          Art by{' '}
+        {/* <Text textAlign="center" fontSize="smaller" variant="description">
+         Okello 
           <Link
             href="https://twitter.com/kojiro_ai"
             target="_blank"
             aria-label="KojiroArt"
             rel="noreferrer"
           >
-            KojiroArt
+           Okello Eric Denis
           </Link>
-        </Text>
+        </Text> */}
       </MotionBox>
     </AnimatePresence>
   )

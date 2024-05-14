@@ -31,7 +31,7 @@ const FeaturedWorksSection = () => {
         Some of my works.
       </Heading>
       <Text variant="description">
-        Check out some of the works I made at freelancing, company projects and
+        Check out some of the works I made as  computer Engineer, company projects and
         even case studies.
       </Text>
 
@@ -45,11 +45,11 @@ const FeaturedWorksSection = () => {
           <FeaturedCard
             idx={1}
             title="CTN Pastor Training!"
-            src="/works/tobira/IphoneX-tobira.webp"
-            description="Japanese social media platform for travelers to show off their
-          adventure to the world. I was incharge of Front end integration, made using React, Antd and Styled Components."
+            src="/works/ctn2.png"
+            description="CTN Pastor Training is a website for coordinating Pastoral mission work of different Pastor training 
+            Missonary orgainisation in Uganda, Ethiopia, Kenya.."
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
-            ctaUrl="https://tobira-app-test.netlify.app/"
+            ctaUrl="https://ctnpastortraining.org/"
             objectPosition="right 20%"
             isMobile={isMobile}
           />
@@ -58,11 +58,12 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={2}
-            title="Nyumba"
-            description="RSV is a smart contract (ERC20) powered reservation system. I am incharge of backend using NET.Core 2.1."
-            src="/works/rsv.webp"
+            title="Nile Centre Business Support"
+            description="I designed in NCBS website  which ensures potraying of what NCBS 
+            does : Training Remote workers"
+            src="/works/ncbs.png"
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
-            ctaUrl="https://solution.rsv.ltd/jp"
+            ctaUrl="https://ncbs.io"
             isMobile={isMobile}
           />
         </MotionGridItem>
@@ -70,11 +71,12 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={3}
-            title="Agora School"
-            description="A quizz - reviewer LMS, I made as a freelancer. Backend were powered by PHPSlim and VueJS for Front end."
-            src="/works/agora.webp"
+            title="Nyumba App"
+            description="A real Estate Mobile App - designed the front end of the mobile App using 
+            React Native with Typescript"
+            src="/works/nyumba.png"
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
-            ctaUrl="https://dev.agora-school.com"
+            ctaUrl=""
             objectPosition="right 20%"
             isMobile={isMobile}
           />
@@ -83,11 +85,11 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={4}
-            title="TMH Layla EC"
-            description="A Japanese Semi-conductor e-commerce made at my old place at IVP. I was working with backend using ASP.NET MVC"
-            src="/works/tmh.webp"
+            title="Bonaire Weather"
+            description="A weather forcasting website with automatic post using OpenWeather API, Robomotion RPA, ReplicateAI. "
+            src="/works/weather.png"
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
-            ctaUrl="https://www.layla-ec.com/"
+            ctaUrl="https://www.stijlvoldesign.nl/forecast/day-2/"
             isMobile={isMobile}
           />
         </MotionGridItem>
