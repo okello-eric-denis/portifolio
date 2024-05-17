@@ -9,6 +9,7 @@ import {
   Box,
   Icon,
   useBreakpointValue,
+  Image
 } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import styles from './styles.module.css'
@@ -20,6 +21,7 @@ import {
   scaleUp,
 } from 'config/animations'
 import { SocialMedias } from 'config/sidebar'
+import Avatar from '../Avatar/index'
 const Sidebar = () => {
   const { colorMode } = useColorMode()
   const display = useBreakpointValue({ base: 'none', lg: 'block' })
@@ -55,6 +57,7 @@ const Sidebar = () => {
         alignItems={{ xl: 'center' }}
       >
         <MotionStack variants={stagger} spacing={6} w="100">
+        <Avatar />
           <MotionText
             variants={fadeInUp}
             delay={1}
@@ -90,7 +93,7 @@ const Sidebar = () => {
             className={styles.marginTopForce}
             variants={fadeInUp}
           >
-            Or you could call me Erica. That works too . . .
+            Or you could call me Eric. That works too . . .
           </MotionText>
 
           <MotionHeading

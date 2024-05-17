@@ -95,7 +95,7 @@ const Portfolio = ({ articles }: { articles: Article[] }): JSX.Element => {
                 }}
               >
                 <About />
-                <Avatar />
+                {/* <Avatar /> */}
               </Box>
             </FadeInLayout>
             <FadeInLayout>
