@@ -73,7 +73,7 @@ const Sidebar = () => {
             variant="accent"
             fontWeight="light"
           >
-            Hello. I am
+            Hello there,
           </MotionText>
           <MotionHeading
             as="h1"
