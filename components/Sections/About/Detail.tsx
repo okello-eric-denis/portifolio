@@ -32,7 +32,7 @@ type ISkillSetModal = {
 const Detail = ({ onOpen }: ISkillSetModal) => {
   const emphasis = useColorModeValue('teal.500', 'cyan.200')
   const currentYear = new Date().getFullYear()
-  const professionalYears = currentYear - 2016
+  const professionalYears = currentYear - 2020
 
   return (
     <Stack
@@ -48,8 +48,13 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
           fontVariantCaps: 'small-caps',
         }}
       >
-        What i do.
+        About Me.
       </Heading>
+      <Text variant="description">
+      I am a self-motivated, adaptable computer Engineer who is enthusiastic about finding reliable
+      solutions for daily technical problems through Robotic Process Automations, Software developments, embedded systems and Hardware programming development, Database managements, machine learning. Am also accustomed to working with cross-cultural, global teams
+      and collaborations.
+      </Text>
       <Text variant="description">
         I`ve been coding professionally for {professionalYears} years now and
         currently working as a <b>Robotic Process Automation Expert</b> that focuses on{' '}
@@ -60,10 +65,9 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
           hasArrow
         >
           <Text as="span" variant="emphasis">
-            <b>web scraping </b>, <b>SEO generation</b>
+            <b>web scraping </b>, <b>SEO generation .</b>
           </Text>
         </Tooltip>{' '}
-        and even <b>front end integration</b> stuff now, how time flies!
         <br /> <br />
         Here are few technologies that are cup of my{' '}
         <Tooltip
@@ -81,10 +85,6 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
       <SimpleGrid columns={2} spacing={4}>
         <List spacing={3}>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiDotNet} color={emphasis} fontSize="2em" />
-            C# - .NET.Core
-          </ListItem>
-          <ListItem fontSize="small" display="flex" alignItems="center">
             <ListIcon as={SiJavascript} color={emphasis} fontSize="2em" />
             Javascript (ES6+)
           </ListItem>
@@ -100,10 +100,6 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
         </List>
         <List spacing={3}>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiGraphql} color={emphasis} fontSize="2em" />
-            Graphql
-          </ListItem>
-          <ListItem fontSize="small" display="flex" alignItems="center">
             <ListIcon as={SiReact} color={emphasis} fontSize="2em" />
             React
           </ListItem>
@@ -112,8 +108,8 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
             NextJS
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiDocker} color={emphasis} fontSize="2em" />
-            Docker
+            <ListIcon as={SiNodeDotJs} color={emphasis} fontSize="2em" />
+           Express JS
           </ListItem>
         </List>
         <Box>

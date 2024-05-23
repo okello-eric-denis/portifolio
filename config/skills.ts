@@ -1,6 +1,5 @@
 import { IconType } from 'react-icons'
 import {
-  SiDotNet,
   SiJavascript,
   SiTypescript,
   SiNodeDotJs,
@@ -13,11 +12,11 @@ import {
   SiStyledComponents,
   SiGhost,
   SiVueDotJs,
-  SiDocker,
+  SiRaspberrypi,
   SiGooglecloud,
   SiCpanel,
-  SiRancher,
-  SiGitlab,
+  SiAsana,
+  SiC,
   SiPostgresql,
   SiMicrosoftsqlserver,
   SiMysql,
@@ -32,6 +31,8 @@ import {
   SiUnity,
   SiMicrosoft,
   SiElectron,
+  SiJava,
+  SiArduino
 } from 'react-icons/si'
 import { BsQuestionSquare } from 'react-icons/bs'
 import { AiOutlineAntDesign } from 'react-icons/ai'
@@ -58,10 +59,7 @@ export const Skills: {
   [key in SkillCategory]: Skill[]
 } = {
   backend: [
-    {
-      name: 'C# - .NET.Core',
-      icon: SiDotNet,
-    },
+   
     {
       name: 'Node',
       icon: SiNodeDotJs,
@@ -79,13 +77,13 @@ export const Skills: {
       icon: SiGraphql,
     },
     {
-      name: 'PHP (Wordpress, Slim)',
+      name: 'PHP (Wordpress)',
       icon: SiPhp,
     },
   ],
   frontend: [
     {
-      name: 'React, RecoilJS',
+      name: 'React',
       icon: SiReact,
     },
     {
@@ -93,7 +91,7 @@ export const Skills: {
       icon: SiNextDotJs,
     },
     {
-      name: 'Apollo Graphql',
+      name: 'Angular',
       icon: SiApollographql,
     },
     {
@@ -104,19 +102,11 @@ export const Skills: {
       name: 'VueJS',
       icon: SiVueDotJs,
     },
-    {
-      name: 'Ghost',
-      icon: SiGhost,
-    },
   ],
   database: [
     {
       name: 'PostgreSQL',
       icon: SiPostgresql,
-    },
-    {
-      name: 'MsSQL',
-      icon: SiMicrosoftsqlserver,
     },
     {
       name: 'MySQL',
@@ -126,53 +116,26 @@ export const Skills: {
       name: 'MongoDb',
       icon: SiMongodb,
     },
-    {
-      name: 'Redis',
-      icon: SiRedis,
-    },
-    {
-      name: 'SocketIO',
-      icon: SiSocketDotIo,
-    },
-    {
-      name: 'Google Pubsub',
-      icon: SiGooglecloud,
-    },
+  
   ],
   cicd: [
     {
-      name: 'Docker',
-      icon: SiDocker,
+      name: 'Arduino',
+      icon: SiArduino,
     },
     {
-      name: 'GCP',
-      icon: SiGooglecloud,
+      name: 'C',
+      icon: SiC,
     },
     {
-      name: 'CPanel',
-      icon: SiCpanel,
-    },
-    {
-      name: 'Rancher',
-      icon: SiRancher,
-    },
-    {
-      name: 'GitlabCICD',
-      icon: SiGitlab,
-    },
-    {
-      name: 'Buildkite',
-      icon: BsQuestionSquare,
+      name: 'Raspberry PI',
+      icon: SiRaspberrypi,
     },
   ],
   'ui frameworks': [
     {
       name: 'Styled Components',
       icon: SiStyledComponents,
-    },
-    {
-      name: 'AntDesign',
-      icon: AiOutlineAntDesign,
     },
     {
       name: 'MaterialUI',
@@ -197,12 +160,8 @@ export const Skills: {
       icon: SiGit,
     },
     {
-      name: 'Bash',
-      icon: SiGnubash,
-    },
-    {
-      name: 'SourceTree',
-      icon: FaSourcetree,
+      name: 'Asana',
+      icon: SiAsana,
     },
   ],
   mobile: [
@@ -211,8 +170,8 @@ export const Skills: {
       icon: SiReact,
     },
     {
-      name: 'Web PWA',
-      icon: IoLogoPwa,
+      name: 'Java',
+      icon: SiJava,
     },
   ],
   games: [

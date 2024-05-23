@@ -9,7 +9,11 @@ import {
   Box,
   Icon,
   useBreakpointValue,
-  Image
+  Image,
+  Alert,
+  AlertIcon,
+  AlertTitle,
+  AlertDescription,
 } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import styles from './styles.module.css'
@@ -21,7 +25,7 @@ import {
   scaleUp,
 } from 'config/animations'
 import { SocialMedias } from 'config/sidebar'
-import Avatar from '../Avatar/index'
+import photo from '../../public/photo.jpg'
 const Sidebar = () => {
   const { colorMode } = useColorMode()
   const display = useBreakpointValue({ base: 'none', lg: 'block' })
@@ -57,14 +61,19 @@ const Sidebar = () => {
         alignItems={{ xl: 'center' }}
       >
         <MotionStack variants={stagger} spacing={6} w="100">
-        <Avatar />
+        <Image
+         borderRadius='full'
+         boxSize='150px'
+         src="/photo.jpg"
+         alt='Okello Eric'
+/>
           <MotionText
             variants={fadeInUp}
             delay={1}
             variant="accent"
             fontWeight="light"
           >
-            Ohh you found me?. Howdy! I am
+            Hello. I am
           </MotionText>
           <MotionHeading
             as="h1"
@@ -93,7 +102,7 @@ const Sidebar = () => {
             className={styles.marginTopForce}
             variants={fadeInUp}
           >
-            Or you could call me Eric. That works too . . .
+            Or you could call me E_Cruise. That works too . . .
           </MotionText>
 
           <MotionHeading

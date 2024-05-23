@@ -69,20 +69,12 @@ export const Experiences: {
     position: 'IT Support Officer',
     duration: 'Dec 2023 - Present',
     logo: {
-      light: '/worked_at_logos/ncbs/ncbs.jpg',
+      light: '/worked_at_logos/ncbs/ncbs_white.png',
       dark: '/worked_at_logos/ncbs/ncbs.jpg',
     },
     roles: [
       <>
        Trainship for Remote work {""}
-        {/* <Link
-          aria-label="NCBS"
-          href="https://ncbs.io/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          NCBS {""}
-        </Link> */}
         Providing IT support
         Development of the company website.
       </>,

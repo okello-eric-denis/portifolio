@@ -17,11 +17,11 @@ const Logo = () => {
         {colorMode === ThemeMode.Dark ? (
           <MotionImage
             className={!isMobile ? styles.logo : ''}
-            boxSize={isMobile ? '30px' : '50px'}
+            boxSize={isMobile ? '80px' : '80px'}
             objectFit="cover"
-            src="./logo.png"
+            src="./dark.png"
             alt="Okello-Eric Logo"
-            fallbackSrc="./logo.png"
+            fallbackSrc="./dark.png"
             variants={simpleOpacity}
             initial="initial"
             animate={isLogoLoaded && 'animate'}
@@ -31,10 +31,10 @@ const Logo = () => {
         ) : (
           <MotionImage
             className={!isMobile ? styles.logo : ''}
-            boxSize={isMobile ? '30px' : '50px'}
+            boxSize={isMobile ? '80px' : '80px'}
             objectFit="cover"
-            src="./logo_light.png"
-            fallbackSrc="./logo_light.png"
+            src="./light.png"
+            fallbackSrc="./light.png"
             alt="Okello-Eric Logo"
             variants={simpleOpacity}
             initial="initial"

@@ -67,9 +67,9 @@ const ExperienceTab = () => {
             _selected={{
               borderColor: activeBordercolor,
               boxShadow: 'none',
-              borderLeftWidth: tabOrientation === 'vertical' ? '4px' : '0',
+              borderLeftWidth: tabOrientation === 'vertical' ? '10px' : '0',
               borderBottomWidth: tabOrientation === 'horizontal' ? '4px' : '0',
-              background: 'whiteAlpha.100',
+              background: 'whiteAlpha.200',
             }}
             borderBottomWidth={tabOrientation === 'horizontal' ? '4px' : '0'}
           >

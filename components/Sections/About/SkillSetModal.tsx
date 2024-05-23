@@ -73,7 +73,7 @@ const SkillList = ({
 const SkillSetModal = ({ isOpen, onClose }: ISkillSetModal) => {
   const backendCols = splitSkills(Skills.backend)
   const frontendCols = splitSkills(Skills.frontend)
-  const cicdCols = splitSkills(Skills.cicd)
+  const embeddedCols = splitSkills(Skills.cicd)
   const dataBaseCols = splitSkills(Skills.database)
   const uiFrameWorkCols = splitSkills(Skills['ui frameworks'])
   const productivityCols = splitSkills(Skills['productivity boost'])
@@ -92,14 +92,15 @@ const SkillSetModal = ({ isOpen, onClose }: ISkillSetModal) => {
         <ModalHeader>Full Skill Set List</ModalHeader>
         <ModalCloseButton />
         <ModalBody className={styles.skillModal}>
+        <SkillList title="Embedded Systems" columns={embeddedCols} />
           <SkillList title="Backend Centric" columns={backendCols} />
           <SkillList title="Frontend Centric" columns={frontendCols} />
-          <SkillList title="CICD centric" columns={cicdCols} />
+          {/* <SkillList title="CICD centric" columns={cicdCols} /> */}
           <SkillList title="Database and Streams" columns={dataBaseCols} />
           <SkillList title="Ui Frameworks" columns={uiFrameWorkCols} />
           <SkillList title="Mobile Development" columns={mobileCols} />
-          <SkillList title="Game Development" columns={gameCols} />
-          <SkillList title="Desktop App" columns={desktopCols} />
+          {/* <SkillList title="Game Development" columns={gameCols} /> */}
+          {/* <SkillList title="Desktop App" columns={desktopCols} /> */}
           <SkillList title="Productivity boosts" columns={productivityCols} />
         </ModalBody>
         <ModalFooter>
