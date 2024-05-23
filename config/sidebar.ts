@@ -1,4 +1,6 @@
 import { IconType } from 'react-icons'
+import { SiX } from "react-icons/si";
+
 import {
   FaInstagram,
   FaLinkedin,
@@ -7,8 +9,11 @@ import {
   FaYoutube,
   FaGithub,
   FaDev,
-} from 'react-icons/fa'
 
+} from 'react-icons/fa'
+import {
+  SiTwitter,
+} from 'react-icons/si'
 type SocialMedia = {
   label: string
   href: string
@@ -16,11 +21,11 @@ type SocialMedia = {
 }
 
 export const SocialMedias: SocialMedia[] = [
-  {
-    label: 'Twitter',
-    href: 'https://twitter.com/keysl1831',
-    icon: FaTwitter,
-  },
+  // {
+  //   label: 'Twitter',
+  //   href: 'https://twitter.com/keysl1831',
+  //   icon: SiTwitter,
+  // },
   {
     label: 'Instagram',
     href: 'https://www.instagram.com/e_cruise_',
@@ -33,7 +38,7 @@ export const SocialMedias: SocialMedia[] = [
   },
   {
     label: 'StackOverflow',
-    href: 'https://stackoverflow.com/users/3867490/keysl',
+    href: 'https://stackoverflow.com/',
     icon: FaStackOverflow,
   },
   // {
@@ -46,9 +51,9 @@ export const SocialMedias: SocialMedia[] = [
     href: 'https://github.com/okello-eric-denis',
     icon: FaGithub,
   },
-  {
-    label: 'Dev.to',
-    href: 'https://dev.to/klawingco',
-    icon: FaDev,
-  },
+  // {
+  //   label: 'Dev.to',
+  //   href: 'https://dev.to/',
+  //   icon: FaDev,
+  // },
 ]
