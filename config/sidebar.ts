@@ -1,5 +1,4 @@
 import { IconType } from 'react-icons'
-import { SiX } from "react-icons/si";
 
 import {
   FaInstagram,

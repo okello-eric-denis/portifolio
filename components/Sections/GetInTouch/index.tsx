@@ -1,4 +1,4 @@
-import { memo, useRef } from 'react'
+import { memo, useRef ,useState} from 'react'
 import { 
   Heading, 
   Text, 
@@ -45,17 +45,18 @@ const rimuruVariant: Variants = {
 const GetInTouch = () => {
   const currentYear = new Date().getFullYear();
   const MotionButton = motion(Button)
-  const form = useRef()
+  const [isEmailSent, setIsEmailSent] = useState(false);
+  const form = useRef<HTMLFormElement>(null)
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-
+    if (!form.current) {
+      console.error('Form ref is null');
+      return;
+    }
     emailjs.sendForm('service_e2po6ur', 'template_rzbuidn', form.current, 'R5M3kGVatDHsUH16x')
       .then((result) => {
-        <Alert>
-           <AlertIcon />
-          Email sent. Thank you for contacting me!
-        </Alert>
+        setIsEmailSent(true);
         console.log(result.text)
         alert('Submitted successfully')
       }, (error) => {
@@ -117,6 +118,12 @@ const GetInTouch = () => {
             Submit
           </Button>
         </form>
+        {isEmailSent && (
+        <Alert status="success" mt={4}>
+          <AlertIcon />
+          Email sent. Thank you for contacting me!
+        </Alert>
+      )}
       </Box>
       <Box
         spacing={0.5}
