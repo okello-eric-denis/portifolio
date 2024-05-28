@@ -54,21 +54,13 @@ export const Experiences: {
       <>
         Undergone training for advanced Automation and Remote work, API and AI
         integration and different applications of RPA to enhance businesses.
-        {/* <Link
-          aria-label="Sitecore 10 .NET Developer Certification"
-          href="/certification/Lawingco-Sitecore 10 NET Developer Cert.pdf"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Sitecore 10 .NET Developer Certification.
-        </Link> */}
       </>,
     ],
   },
   NCBS: {
     name: 'Nile Center Business Support',
     longName: ' NCBS',
-    subDetail: 'via Prosource BPO',
+    subDetail: 'via Remote',
     url: 'https://ncbs.io/',
     position: 'IT Support Officer',
     duration: 'Dec 2023 - Present',
@@ -97,24 +89,8 @@ export const Experiences: {
         </Link>{' '}
         main site developed with wordpress.
       </>,
-      <>
-        Migrating of existing marketing email related tools and batch jobs from
-        Responsys into new platform called Braze.
-      </>,
-      <>
-        Hired at early 2020, first major task was helping with selecting a new
-        marketing vendor that can scale and also enable us to have
-        personalisation as well, selecting{' '}
-        <Link
-          aria-label="Braze"
-          href="https://www.braze.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Braze
-        </Link>{' '}
-        as a result.
-      </>,
+      <>Troubleshooting Computer Hardware issues.</>,
+      <>Team work and collaboration to ensure productivity.</>,
     ],
   },
   Logos: {
@@ -130,19 +106,20 @@ export const Experiences: {
     },
     roles: [
       <>
-        Hands on experience in designing and developing websites using
-        WordPress, Next.Js, React Js, PHP frameworks, CSS, JavaScript, HTML and
-        various web technologies.
+        Designing and developing websites using CMS like WordPress and Drupal.
       </>,
-      <>Development of Websites using ReactJs, Next Js..</>,
+      <>Front-end web development using ReactJS and Next JS.</>,
       <>
         Deploying websites, configuring host environments and managing domain
-        settings, using cPanel, FTP, and hosting platforms like Digital Ocean.
+        settings, using cPanel, FTP, and hosting platforms.
       </>,
-      <>Created and managed databases using MySQL.</>,
       <>
-        Using version control systems like Git for collaborative development and
-        code management.
+        Identifying and resolving issues with websites, such as broken links,
+        layout problems and coding errors.
+      </>,
+      <>
+        Collaborative development and using git for code management and version
+        control.
       </>,
     ],
   },
@@ -158,21 +135,26 @@ export const Experiences: {
       dark: '/worked_at_logos/fundi/fundi_bots.png',
     },
     roles: [
+      <>Using Fritzing and Proteus for designing Circuits.</>,
       <>
-        Hands on experience in designing and developing websites using
-        WordPress, Next.Js, React Js, PHP frameworks, CSS, JavaScript, HTML and
-        various web technologies.
+        Design and development of integrated circuits with components like
+        resistors, capacitors, transistors among others.
       </>,
-      <>Development of Websites using ReactJs, Next Js..</>,
       <>
-        Deploying websites, configuring host environments and managing domain
-        settings, using cPanel, FTP, and hosting platforms like Digital Ocean.
+        Embedded systems development using Arduino interface with C programming.
       </>,
-      <>Created and managed databases using MySQL.</>,
       <>
-        Using version control systems like Git for collaborative development and
-        code management.
+        Integration of sensors like ultrasonic sensors, PIR sensors, Flow rate
+        sensors, RFID modules, Flex sensors among others with Arduino interfaces
+        to come up with functional projects.
       </>,
+      <>
+        Development of mobile Application using App inventors for interfacing
+        with Arduino.
+      </>,
+      <>Use of Solid works for design of solid works.</>,
+      <>Printing of Solid works elements using 3D printer.</>,
+      <>Project management and reporting through weekly plans.</>,
     ],
   },
 }
