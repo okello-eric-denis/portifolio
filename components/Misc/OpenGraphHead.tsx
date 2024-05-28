@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from 'next/head';
 
 const OpenGraphHead = () => (
   <Head>
@@ -12,14 +12,14 @@ const OpenGraphHead = () => (
     <meta property="og:url" content="https://okello-eric.netlify.app/" />
     <meta
       property="og:description"
-      content="Hello there! I am Okello Eric. Or you could call me Eric. That works too . . . I am a Computer Engineer"
+      content="Hello there! I am Okello Eric. Or you could call me E_Cruise. That works too . . . I am a Computer Engineer"
     />
     <meta property="og:type" content="profile" />
     <meta
       property="og:image"
-      content="https://okello-eric.netlify.app/photo.jpg"
+      content="https://okello-eric.netlify.app/dark.png"
     />
   </Head>
-)
+);
 
-export default OpenGraphHead
+export default OpenGraphHead;
