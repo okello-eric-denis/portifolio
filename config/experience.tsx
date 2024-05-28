@@ -33,12 +33,16 @@ export const Experiences: {
     roles: [
       <>
         Contributed to the design and development of a Robotic Process
-        Automation flows using Robomotion tools. Webscraping and databbase
-        Update for real Estates in Bonaire. Integration of APIs for data
+        Automation flows using Robomotion tools
+        </>,
+        <>Webscraping and databbase
+        Update for real Estates in Bonaire.
+        </> ,
+        <>Integration of APIs for data
         fetching of weather forecast in the Bonaire region. Integration of
         OpenAI and image generation API for Auto-generation of website content
         and images.
-      </>,
+        </>,
       <>
         Configuring of the Robomotion SEO writer Application for SEO content
         generation
@@ -66,7 +70,7 @@ export const Experiences: {
     duration: 'Dec 2023 - Present',
     logo: {
       light: '/worked_at_logos/ncbs/ncbs_white.png',
-      dark: '/worked_at_logos/ncbs/ncbs.jpg',
+      dark: '/worked_at_logos/ncbs/ncbs-dark.png',
     },
     roles: [
       <>
@@ -101,8 +105,8 @@ export const Experiences: {
     position: 'Software Developer (Intern)',
     duration: 'Jan 2023 - March 2023',
     logo: {
-      light: '/worked_at_logos/logos/logos.jpeg',
-      dark: '/worked_at_logos/logos/logos.jpeg',
+      light: '/worked_at_logos/logos/logos.png',
+      dark: '/worked_at_logos/logos/logos.png',
     },
     roles: [
       <>

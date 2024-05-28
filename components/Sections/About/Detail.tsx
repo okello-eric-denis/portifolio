@@ -12,7 +12,13 @@ import {
   Stack,
   useColorModeValue,
 } from '@chakra-ui/react'
-import { SiTypescript, SiReact, SiNextdotjs, SiNodedotjs } from 'react-icons/si'
+import {
+  SiTypescript,
+  SiReact,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiJavascript,
+} from 'react-icons/si'
 import { GiCoffeePot } from 'react-icons/gi'
 import { IoMdOpen } from 'react-icons/io'
 
@@ -79,7 +85,7 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
       <SimpleGrid columns={2} spacing={4}>
         <List spacing={3}>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiTypescript} color={emphasis} fontSize="2em" />
+            <ListIcon as={SiJavascript} color={emphasis} fontSize="2em" />
             Javascript (ES6+)
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">

@@ -21,7 +21,6 @@ import {
   scaleUp,
 } from 'config/animations'
 import { SocialMedias } from 'config/sidebar'
-
 const Sidebar = () => {
   const { colorMode } = useColorMode()
   const display = useBreakpointValue({ base: 'none', lg: 'block' })
