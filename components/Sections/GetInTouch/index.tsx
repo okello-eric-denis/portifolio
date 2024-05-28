@@ -63,8 +63,9 @@ const GetInTouch = () => {
       </Heading>
       <Text variant="description">
         Though, I am fairly introverted myself. I do reply to messages as long
-        as my human interaction battery lasts. Coding, work, chess, FIFA , movies or swimming, anything is cool. So feel free to message me on any of my social
-        media or shoot me an{' '}
+        as my human interaction battery lasts. Coding, work, chess, FIFA ,
+        movies or swimming, anything is cool. So feel free to message me on any
+        of my social media or shoot me an{' '}
         <Link
           href="mailto:okelloericdenis@gmail.com"
           target="_blank"

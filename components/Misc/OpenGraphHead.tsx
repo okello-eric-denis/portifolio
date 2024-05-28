@@ -20,6 +20,6 @@ const OpenGraphHead = () => (
       content="https://okello-eric.netlify.app/dark.png"
     />
   </Head>
-);
+)
 
-export default OpenGraphHead;
+export default OpenGraphHead
