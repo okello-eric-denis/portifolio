@@ -50,8 +50,8 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
         teams and collaborations.
       </Text>
       <Text variant="description">
-        I've been coding professionally for {professionalYears} years now and
-        currently working as a <b>Robotic Process Automation Expert</b> that
+        I&apos;ve been coding professionally for {professionalYears} years now
+        and currently working as a <b>Robotic Process Automation Expert</b> that
         focuses on <b>automating business processes</b>, <b>like</b>,{' '}
         <Tooltip
           label="Ha!. Or more accurately TECH DEBT"
