@@ -8,7 +8,7 @@ const OpenGraphHead = () => (
     <meta property="og:url" content="https://okello-eric.netlify.app/" />
     <meta
       property="og:description"
-      content="I am Okello Eric. Or you could call me Eric. That works too . . . I am a Computer Engineer"
+      content=" Hello there! I am Okello Eric. Or you could call me Eric. That works too . . . I am a Computer Engineer"
     />
     <meta property="og:type" content="profile" />
     <meta
