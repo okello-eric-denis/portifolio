@@ -2,42 +2,29 @@ import { IconType } from 'react-icons'
 import {
   SiJavascript,
   SiTypescript,
-  SiNodeDotJs,
+  SiNodedotjs,
   SiGraphql,
   SiApollographql,
   SiPhp,
   SiReact,
-  SiNextDotJs,
+  SiNextdotjs,
   SiRedux,
-  SiStyledComponents,
-  SiGhost,
-  SiVueDotJs,
+  SiVuedotjs,
   SiRaspberrypi,
-  SiGooglecloud,
-  SiCpanel,
   SiAsana,
   SiC,
   SiPostgresql,
-  SiMicrosoftsqlserver,
   SiMysql,
   SiMongodb,
-  SiRedis,
-  SiSocketDotIo,
-  SiMaterialUi,
   SiFramer,
   SiGit,
-  SiGnubash,
   SiVisualstudiocode,
   SiUnity,
   SiMicrosoft,
   SiElectron,
-  SiJava,
-  SiArduino
+  SiArduino,
 } from 'react-icons/si'
 import { BsQuestionSquare } from 'react-icons/bs'
-import { AiOutlineAntDesign } from 'react-icons/ai'
-import { FaSourcetree } from 'react-icons/fa'
-import { IoLogoPwa } from 'react-icons/io5'
 
 export type SkillCategory =
   | 'backend'
@@ -59,10 +46,9 @@ export const Skills: {
   [key in SkillCategory]: Skill[]
 } = {
   backend: [
-   
     {
       name: 'Node',
-      icon: SiNodeDotJs,
+      icon: SiNodedotjs,
     },
     {
       name: 'Javascript (ES6+)',
@@ -88,7 +74,7 @@ export const Skills: {
     },
     {
       name: 'NextJS',
-      icon: SiNextDotJs,
+      icon: SiNextdotjs,
     },
     {
       name: 'Angular',
@@ -100,7 +86,7 @@ export const Skills: {
     },
     {
       name: 'VueJS',
-      icon: SiVueDotJs,
+      icon: SiVuedotjs,
     },
   ],
   database: [
@@ -116,7 +102,6 @@ export const Skills: {
       name: 'MongoDb',
       icon: SiMongodb,
     },
-  
   ],
   cicd: [
     {
@@ -135,11 +120,11 @@ export const Skills: {
   'ui frameworks': [
     {
       name: 'Styled Components',
-      icon: SiStyledComponents,
+      icon: SiRedux,
     },
     {
       name: 'MaterialUI',
-      icon: SiMaterialUi,
+      icon: SiRedux,
     },
     {
       name: 'Framer Motion',
@@ -171,7 +156,7 @@ export const Skills: {
     },
     {
       name: 'Java',
-      icon: SiJava,
+      icon: SiRedux,
     },
   ],
   games: [

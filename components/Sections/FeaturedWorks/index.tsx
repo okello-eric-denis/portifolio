@@ -31,8 +31,8 @@ const FeaturedWorksSection = () => {
         Some of my works.
       </Heading>
       <Text variant="description">
-        Check out some of the works I made as  computer Engineer, company projects and
-        even case studies.
+        Check out some of the works I made as computer Engineer, company
+        projects and even case studies.
       </Text>
 
       <MotionGrid
@@ -46,7 +46,7 @@ const FeaturedWorksSection = () => {
             idx={1}
             title="CTN Pastor Training!"
             src="/works/ctn2.png"
-            description="CTN Pastor Training is a website for coordinating Pastoral mission work of different Pastor training 
+            description="CTN Pastor Training is a website for coordinating Pastoral mission work of different Pastor training
             Missonary orgainisation in Uganda, Ethiopia, Kenya.."
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
             ctaUrl="https://ctnpastortraining.org/"
@@ -59,7 +59,7 @@ const FeaturedWorksSection = () => {
           <FeaturedCard
             idx={2}
             title="Nile Centre Business Support"
-            description="I designed in NCBS website  which ensures potraying of what NCBS 
+            description="I designed in NCBS website  which ensures potraying of what NCBS
             does : Training Remote workers"
             src="/works/ncbs.png"
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
@@ -72,7 +72,7 @@ const FeaturedWorksSection = () => {
           <FeaturedCard
             idx={3}
             title="Nyumba App"
-            description="A real Estate Mobile App - designed the front end of the mobile App using 
+            description="A real Estate Mobile App - designed the front end of the mobile App using
             React Native with Typescript"
             src="/works/nyumba.png"
             height={{ base: '130px', md: '225px', '2xl': '300px' }}

@@ -1,72 +1,51 @@
-import { memo, useRef ,useState} from 'react'
-import { 
-  Heading, 
-  Text, 
-  Stack, 
-  Link, 
-  Icon, 
-  Box, 
-  Input, 
-  Button, 
-  Textarea, 
+import { memo, useRef, useState } from 'react'
+import {
+  Heading,
+  Text,
+  Stack,
+  Link,
+  Icon,
+  Box,
+  Input,
+  Button,
+  Textarea,
   Alert,
   AlertIcon,
-  AlertTitle,
-  AlertDescription, } from '@chakra-ui/react'
-import {simpleOpacity,} from 'config/animations'
-import { motion, Variants } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
+} from '@chakra-ui/react'
 import { RiHeartPulseFill, RiCopyleftLine, RiGithubFill } from 'react-icons/ri'
-import { FormControl, FormLabel, FormErrorMessage } from '@chakra-ui/react'
+import { FormControl, FormLabel } from '@chakra-ui/react'
 import emailjs from '@emailjs/browser'
 import styles from './styles.module.css'
-
-const rimuruVariant: Variants = {
-  shake: {
-    rotate: [0, 15, 0, -15, 0],
-    transition: {
-      delay: 1.2,
-      duration: 0.5,
-      repeat: 2,
-      ease: 'easeInOut',
-    },
-  },
-  jump: {
-    y: [0, -35, 0],
-    transition: {
-      delay: 1.8,
-      duration: 0.5,
-      repeat: 3,
-      ease: 'easeInOut',
-    },
-  },
-}
-
 const GetInTouch = () => {
-  const currentYear = new Date().getFullYear();
-  const MotionButton = motion(Button)
-  const [isEmailSent, setIsEmailSent] = useState(false);
+  const currentYear = new Date().getFullYear()
+  const [isEmailSent, setIsEmailSent] = useState(false)
   const form = useRef<HTMLFormElement>(null)
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     if (!form.current) {
-      console.error('Form ref is null');
-      return;
+      console.error('Form ref is null')
+      return
     }
-    emailjs.sendForm('service_e2po6ur', 'template_rzbuidn', form.current, 'R5M3kGVatDHsUH16x')
-      .then((result) => {
-        setIsEmailSent(true);
-        console.log(result.text)
-        alert('Submitted successfully')
-      }, (error) => {
-        console.log(error.text)
-        alert('Error')
-      })
+    emailjs
+      .sendForm(
+        'service_e2po6ur',
+        'template_rzbuidn',
+        form.current,
+        'R5M3kGVatDHsUH16x'
+      )
+      .then(
+        (result) => {
+          setIsEmailSent(true)
+          console.log(result.text)
+          alert('Submitted successfully')
+        },
+        (error) => {
+          console.log(error.text)
+          alert('Error')
+        }
+      )
   }
-
-  const [ref, inView] = useInView()
-
   return (
     <Stack
       width={{ base: '99%', lg: '60%', xl: '75%' }}
@@ -100,33 +79,37 @@ const GetInTouch = () => {
         <form ref={form} onSubmit={sendEmail}>
           <FormControl isRequired>
             <FormLabel>Name</FormLabel>
-            <Input type='text' placeholder='okello eric' name='name' />
+            <Input type="text" placeholder="okello eric" name="name" />
           </FormControl>
           <FormControl isRequired mt={4}>
             <FormLabel>Email address</FormLabel>
-            <Input type='email' placeholder='user@domain.com' name='email' />
+            <Input type="email" placeholder="user@domain.com" name="email" />
           </FormControl>
           <FormControl isRequired mt={4}>
             <FormLabel>Subject</FormLabel>
-            <Input type='text' placeholder='Mobile app development' name='subject' />
+            <Input
+              type="text"
+              placeholder="Mobile app development"
+              name="subject"
+            />
           </FormControl>
           <FormControl isRequired mt={4}>
             <FormLabel>Message</FormLabel>
-            <Textarea placeholder='How may I help you' name='message' />
+            <Textarea placeholder="How may I help you" name="message" />
           </FormControl>
-          <Button mt={4} className={styles.button} type='submit'>
+          <Button mt={4} className={styles.button} type="submit">
             Submit
           </Button>
         </form>
         {isEmailSent && (
-        <Alert status="success" mt={4}>
-          <AlertIcon />
-          Email sent. Thank you for contacting me!
-        </Alert>
-      )}
+          <Alert status="success" mt={4}>
+            <AlertIcon />
+            Email sent. Thank you for contacting me!
+          </Alert>
+        )}
       </Box>
       <Box
-        spacing={0.5}
+        // spacing={0.5}
         textAlign="center"
         fontFamily="monospace"
         paddingTop={{ base: 10, lg: 20, xl: 20 }}

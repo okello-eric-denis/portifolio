@@ -1,11 +1,4 @@
-import {
-  Box,
-  Image as ChkImage,
-  Text,
-  Link,
-  SkeletonCircle,
-  useColorModeValue,
-} from '@chakra-ui/react'
+import { Box, Image as ChkImage, useColorModeValue } from '@chakra-ui/react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useEffect } from 'react'
 import { avatarAnimation } from 'config/animations'
@@ -51,9 +44,10 @@ const Avatar = () => {
       >
         <ChkImage
           src={imgAvatar}
-          borderRadius='full'
+          borderRadius="full"
           alt="Okello-Eric Avatar"
-          boxSize='250px'/>
+          boxSize="250px"
+        />
       </MotionBox>
     </AnimatePresence>
   )

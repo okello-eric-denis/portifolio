@@ -10,10 +10,6 @@ import {
   Icon,
   useBreakpointValue,
   Image,
-  Alert,
-  AlertIcon,
-  AlertTitle,
-  AlertDescription,
 } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import styles from './styles.module.css'
@@ -25,7 +21,6 @@ import {
   scaleUp,
 } from 'config/animations'
 import { SocialMedias } from 'config/sidebar'
-import photo from '../../public/photo.jpg'
 const Sidebar = () => {
   const { colorMode } = useColorMode()
   const display = useBreakpointValue({ base: 'none', lg: 'block' })
@@ -61,12 +56,12 @@ const Sidebar = () => {
         alignItems={{ xl: 'center' }}
       >
         <MotionStack variants={stagger} spacing={6} w="100">
-        <Image
-         borderRadius='full'
-         boxSize='150px'
-         src="/photo.jpg"
-         alt='Okello Eric'
-/>
+          <Image
+            borderRadius="full"
+            boxSize="150px"
+            src="/photo.jpg"
+            alt="Okello Eric"
+          />
           <MotionText
             variants={fadeInUp}
             delay={1}
@@ -82,7 +77,7 @@ const Sidebar = () => {
             textTransform="uppercase"
             variants={fadeInUp}
           >
-            Okello 
+            Okello
           </MotionHeading>
           <MotionHeading
             as="h2"
@@ -127,8 +122,10 @@ const Sidebar = () => {
               {' '}
               Thank you!
             </Text>
-            <br />I am software engineer that specializes at backend apis, front
-            end integration, recently found myself studying UX too.
+            <br />I am computer engineer that specializes at robotic
+            engineering, embedded systems, mobile Application development, API
+            development and front end integration, recently found myself
+            studying machine learning too.
           </MotionText>
           <MotionButton
             size="lg"

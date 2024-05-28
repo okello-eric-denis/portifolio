@@ -5,10 +5,10 @@ import {
   Stack,
   Box,
   useBreakpointValue,
-  Image
 } from '@chakra-ui/react'
 import dynamic from 'next/dynamic'
 import Script from 'next/script'
+import blogs from '../public/blogs/index'
 import OpenGraphHead from 'components/Misc/OpenGraphHead'
 import FadeInLayout from 'components/Layout/FadeWhenVisible'
 import Menu from 'components/Menu'
@@ -18,13 +18,8 @@ import Experience from 'components/Sections/Experience'
 import FeaturedWorks from 'components/Sections/FeaturedWorks'
 import ScrollMore from 'components/Misc/ScrollMore'
 import { Article } from 'types/article'
-import blogs from '../public/blogs/index'
-// import Avatar from 'components/Avatar'
-// These are on bottom sections so no need to render it instantly
-const DevToArticles = dynamic(() => import('components/Sections/DevToArticles'))
 const GetInTouch = dynamic(() => import('components/Sections/GetInTouch'))
-
-const Portfolio = ({ articles }: { articles: Article[] }): JSX.Element => {
+const Portfolio = ({}: { articles: Article[] }): JSX.Element => {
   const sideBarPadding = useBreakpointValue({ base: '5', md: '8', lg: '14' })
   const mainContent = useBreakpointValue({
     base: '5',
@@ -59,7 +54,8 @@ const Portfolio = ({ articles }: { articles: Article[] }): JSX.Element => {
           sm: 'repeat(1, 0)',
           lg: 'repeat(2, 1fr)',
         }}
-        gap={4}>
+        gap={4}
+      >
         <GridItem
           padding={sideBarPadding}
           marginTop={paddTop}
@@ -95,7 +91,6 @@ const Portfolio = ({ articles }: { articles: Article[] }): JSX.Element => {
                 }}
               >
                 <About />
-                {/* <Avatar /> */}
               </Box>
             </FadeInLayout>
             <FadeInLayout>

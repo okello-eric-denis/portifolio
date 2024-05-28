@@ -12,16 +12,7 @@ import {
   Stack,
   useColorModeValue,
 } from '@chakra-ui/react'
-import {
-  SiDotNet,
-  SiJavascript,
-  SiTypescript,
-  SiGraphql,
-  SiReact,
-  SiNextDotJs,
-  SiNodeDotJs,
-  SiDocker,
-} from 'react-icons/si'
+import { SiTypescript, SiReact, SiNextdotjs, SiNodedotjs } from 'react-icons/si'
 import { GiCoffeePot } from 'react-icons/gi'
 import { IoMdOpen } from 'react-icons/io'
 
@@ -51,14 +42,17 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
         About Me.
       </Heading>
       <Text variant="description">
-      I am a self-motivated, adaptable computer Engineer who is enthusiastic about finding reliable
-      solutions for daily technical problems through Robotic Process Automations, Software developments, embedded systems and Hardware programming development, Database managements, machine learning. Am also accustomed to working with cross-cultural, global teams
-      and collaborations.
+        I am a self-motivated, adaptable computer Engineer who is enthusiastic
+        about finding reliable solutions for daily technical problems through
+        Robotic Process Automations, Software developments, embedded systems and
+        Hardware programming development, Database managements, machine
+        learning. Am also accustomed to working with cross-cultural, global
+        teams and collaborations.
       </Text>
       <Text variant="description">
         I`ve been coding professionally for {professionalYears} years now and
-        currently working as a <b>Robotic Process Automation Expert</b> that focuses on{' '}
-        <b>automating business processes</b>, <b>like</b>,{' '}
+        currently working as a <b>Robotic Process Automation Expert</b> that
+        focuses on <b>automating business processes</b>, <b>like</b>,{' '}
         <Tooltip
           label="Ha!. Or more accurately TECH DEBT"
           aria-label="Tech Debt?"
@@ -85,7 +79,7 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
       <SimpleGrid columns={2} spacing={4}>
         <List spacing={3}>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiJavascript} color={emphasis} fontSize="2em" />
+            <ListIcon as={SiTypescript} color={emphasis} fontSize="2em" />
             Javascript (ES6+)
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
@@ -94,7 +88,7 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
           </ListItem>
 
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiNodeDotJs} color={emphasis} fontSize="2em" />
+            <ListIcon as={SiNodedotjs} color={emphasis} fontSize="2em" />
             Node
           </ListItem>
         </List>
@@ -104,12 +98,12 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
             React
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiNextDotJs} color={emphasis} fontSize="2em" />
+            <ListIcon as={SiNextdotjs} color={emphasis} fontSize="2em" />
             NextJS
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiNodeDotJs} color={emphasis} fontSize="2em" />
-           Express JS
+            <ListIcon as={SiNodedotjs} color={emphasis} fontSize="2em" />
+            Express JS
           </ListItem>
         </List>
         <Box>

@@ -4,15 +4,8 @@ import {
   FaInstagram,
   FaLinkedin,
   FaStackOverflow,
-  FaTwitter,
-  FaYoutube,
   FaGithub,
-  FaDev,
-
 } from 'react-icons/fa'
-import {
-  SiTwitter,
-} from 'react-icons/si'
 type SocialMedia = {
   label: string
   href: string

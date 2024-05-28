@@ -1,6 +1,6 @@
 import { Link } from '@chakra-ui/react'
 
-export type Company = 'Deloitte' | 'NCBS' | 'Logos'| 'Fundi'
+export type Company = 'Deloitte' | 'NCBS' | 'Logos' | 'Fundi'
 
 export type CompanyDetail = {
   name: string
@@ -32,24 +32,28 @@ export const Experiences: {
     },
     roles: [
       <>
-       Contributed to the design and development of a Robotic Process Automation flows using Robomotion tools.
-       Webscraping and databbase Update for real Estates in Bonaire.
-       Integration of APIs for data fetching of weather forecast in the Bonaire region.
-       Integration of OpenAI and image generation API for Auto-generation of website content and images.
+        Contributed to the design and development of a Robotic Process
+        Automation flows using Robomotion tools. Webscraping and databbase
+        Update for real Estates in Bonaire. Integration of APIs for data
+        fetching of weather forecast in the Bonaire region. Integration of
+        OpenAI and image generation API for Auto-generation of website content
+        and images.
       </>,
       <>
-       Configuring of the Robomotion SEO writer Application for SEO content generation
+        Configuring of the Robomotion SEO writer Application for SEO content
+        generation
         <Link
           aria-label="Deloitte Digital AU"
           href="https://www.robomotion.io/"
           target="_blank"
-          rel="noreferrer">
-            SEO writer Application
-         </Link>
-        </>,
+          rel="noreferrer"
+        >
+          SEO writer Application
+        </Link>
+      </>,
       <>
-        Undergone training for advanced Automation and Remote work,
-        API and AI integration and different applications of RPA to enhance businesses.
+        Undergone training for advanced Automation and Remote work, API and AI
+        integration and different applications of RPA to enhance businesses.
         {/* <Link
           aria-label="Sitecore 10 .NET Developer Certification"
           href="/certification/Lawingco-Sitecore 10 NET Developer Cert.pdf"
@@ -74,12 +78,12 @@ export const Experiences: {
     },
     roles: [
       <>
-       Trainship for Remote work {""}
-        Providing IT support
-        Development of the company website.
+        Trainship for Remote work {''}
+        Providing IT support Development of the company website.
       </>,
       <>
-       Joined different course for  soft skills, Problem solving and critical thinking.
+        Joined different course for soft skills, Problem solving and critical
+        thinking.
       </>,
       <>
         Worked on maintaining{' '}
@@ -126,23 +130,20 @@ export const Experiences: {
     },
     roles: [
       <>
-        Hands on experience in designing and developing websites using WordPress, Next.Js, React
-        Js, PHP frameworks, CSS, JavaScript, HTML and various web technologies.
+        Hands on experience in designing and developing websites using
+        WordPress, Next.Js, React Js, PHP frameworks, CSS, JavaScript, HTML and
+        various web technologies.
       </>,
+      <>Development of Websites using ReactJs, Next Js..</>,
       <>
-       Development of Websites using ReactJs, Next Js..
+        Deploying websites, configuring host environments and managing domain
+        settings, using cPanel, FTP, and hosting platforms like Digital Ocean.
       </>,
+      <>Created and managed databases using MySQL.</>,
       <>
-       Deploying websites, configuring host environments and managing domain settings, using
-       cPanel, FTP, and  hosting platforms like Digital Ocean.
+        Using version control systems like Git for collaborative development and
+        code management.
       </>,
-      <>
-       Created and managed databases using MySQL.
-      </>,
-      <>
-      Using version control systems like Git for collaborative development and code
-      management.
-      </>
     ],
   },
   Fundi: {
@@ -158,23 +159,20 @@ export const Experiences: {
     },
     roles: [
       <>
-        Hands on experience in designing and developing websites using WordPress, Next.Js, React
-        Js, PHP frameworks, CSS, JavaScript, HTML and various web technologies.
+        Hands on experience in designing and developing websites using
+        WordPress, Next.Js, React Js, PHP frameworks, CSS, JavaScript, HTML and
+        various web technologies.
       </>,
+      <>Development of Websites using ReactJs, Next Js..</>,
       <>
-       Development of Websites using ReactJs, Next Js..
+        Deploying websites, configuring host environments and managing domain
+        settings, using cPanel, FTP, and hosting platforms like Digital Ocean.
       </>,
+      <>Created and managed databases using MySQL.</>,
       <>
-       Deploying websites, configuring host environments and managing domain settings, using
-       cPanel, FTP, and  hosting platforms like Digital Ocean.
+        Using version control systems like Git for collaborative development and
+        code management.
       </>,
-      <>
-       Created and managed databases using MySQL.
-      </>,
-      <>
-      Using version control systems like Git for collaborative development and code
-      management.
-      </>
     ],
   },
 }

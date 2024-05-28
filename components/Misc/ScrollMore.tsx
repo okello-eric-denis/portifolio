@@ -111,7 +111,8 @@ const ScrollMore = () => {
                 color: emailLine,
                 _after: {
                   backgroundColor: emailLine,
-                  opacity: 1,},
+                  opacity: 1,
+                },
               }}
               position="relative"
               letterSpacing={3}
@@ -129,7 +130,7 @@ const ScrollMore = () => {
                 marginTop: '10px',
               }}
             >
-             okelloericdenis@gmail.com
+              okelloericdenis@gmail.com
             </Text>
           </motion.div>
         )}

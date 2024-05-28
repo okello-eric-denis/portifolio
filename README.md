@@ -1,14 +1,15 @@
-
 ## Getting Started
 
-This project heavily favors <b>yarn</b> over npm. 
+This project heavily favors <b>yarn</b> over npm.
 
 So to set things up you need to run
 
 ```bash
 yarn install
 ```
+
 or just
+
 ```bash
 yarn
 ```
@@ -22,6 +23,3 @@ yarn dev
 and it should open at
 
 > http://localhost:3000/
-
-
-
