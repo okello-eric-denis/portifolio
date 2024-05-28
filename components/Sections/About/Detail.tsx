@@ -63,7 +63,7 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
           </Text>
         </Tooltip>{' '}
         <br /> <br />
-        Here are few technologies that are cup of my{' '}
+        Here are a few technologies that are my cup of{' '}
         <Tooltip
           label="I only drink tea if I needed too!"
           aria-label="I hate Tea!"
