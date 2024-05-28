@@ -62,7 +62,7 @@ const GetInTouch = () => {
         Get In Touch!{' '}
       </Heading>
       <Text variant="description">
-        Though I am fairly introverted, myself I do reply to messages. I love
+        Though I am fairly introverted, myself I do reply to messages. I fancy
         Coding, work, chess, FIFA , movies or swimming, anything is cool. So
         feel free to message me on any of my social media or shoot me an{' '}
         <Link
