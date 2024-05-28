@@ -21,6 +21,7 @@ import {
   scaleUp,
 } from 'config/animations'
 import { SocialMedias } from 'config/sidebar'
+
 const Sidebar = () => {
   const { colorMode } = useColorMode()
   const display = useBreakpointValue({ base: 'none', lg: 'block' })
@@ -30,6 +31,7 @@ const Sidebar = () => {
   const MotionStack = motion(Stack)
   const MotionButton = motion(Button)
   const MotionBox = motion(Box)
+  const imageSrc = colorMode === 'light' ? '/photo.jpg' : '/photo.jpg'
 
   return (
     <MotionBox
@@ -59,7 +61,7 @@ const Sidebar = () => {
           <Image
             borderRadius="full"
             boxSize="150px"
-            src="/photo.jpg"
+            src={imageSrc}
             alt="Okello Eric"
           />
           <MotionText
