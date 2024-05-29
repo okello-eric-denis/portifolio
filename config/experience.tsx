@@ -34,15 +34,13 @@ export const Experiences: {
       <>
         Contributed to the design and development of a Robotic Process
         Automation flows using Robomotion tools
-        </>,
-        <>Webscraping and databbase
-        Update for real Estates in Bonaire.
-        </> ,
-        <>Integration of APIs for data
-        fetching of weather forecast in the Bonaire region. Integration of
-        OpenAI and image generation API for Auto-generation of website content
-        and images.
-        </>,
+      </>,
+      <>Webscraping and databbase Update for real Estates in Bonaire.</>,
+      <>
+        Integration of APIs for data fetching of weather forecast in the Bonaire
+        region. Integration of OpenAI and image generation API for
+        Auto-generation of website content and images.
+      </>,
       <>
         Configuring of the Robomotion SEO writer Application for SEO content
         generation
@@ -109,9 +107,7 @@ export const Experiences: {
       dark: '/worked_at_logos/logos/logos.png',
     },
     roles: [
-      <>
-        Designing and developing websites using CMS like WordPress and Drupal.
-      </>,
+      <>Designing and developing websites using CMS; WordPress and Drupal.</>,
       <>Front-end web development using ReactJS and Next JS.</>,
       <>
         Deploying websites, configuring host environments and managing domain
