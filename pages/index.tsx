@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import {
   Grid,
   GridItem,
@@ -17,9 +18,7 @@ import Experience from 'components/Sections/Experience'
 import FeaturedWorks from 'components/Sections/FeaturedWorks'
 import ScrollMore from 'components/Misc/ScrollMore'
 import { Article } from 'types/article'
-
 const GetInTouch = dynamic(() => import('components/Sections/GetInTouch'))
-
 const Portfolio = ({}: { articles: Article[] }): JSX.Element => {
   const sideBarPadding = useBreakpointValue({ base: '5', md: '8', lg: '14' })
   const mainContent = useBreakpointValue({
@@ -29,7 +28,6 @@ const Portfolio = ({}: { articles: Article[] }): JSX.Element => {
     xl: 0,
   })
   const paddTop = useBreakpointValue({ base: '20', sm: 20, md: 20 })
-
   return (
     <>
       <Script
@@ -57,7 +55,6 @@ const Portfolio = ({}: { articles: Article[] }): JSX.Element => {
           lg: 'repeat(2, 1fr)',
         }}
         gap={4}
-        marginTop="80px" // Adjust based on your menu height
       >
         <GridItem
           padding={sideBarPadding}
@@ -140,6 +137,8 @@ const Portfolio = ({}: { articles: Article[] }): JSX.Element => {
 }
 
 export async function getStaticProps() {
+  // const res = await fetch('https://dev.to/api/articles?username=klawingco')
+  // const articles = await res.json()
   const articles = blogs
   return {
     props: {
