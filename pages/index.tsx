@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import {
   Grid,
   GridItem,
@@ -18,18 +17,24 @@ import Experience from 'components/Sections/Experience'
 import FeaturedWorks from 'components/Sections/FeaturedWorks'
 import ScrollMore from 'components/Misc/ScrollMore'
 import { Article } from 'types/article'
+
+// Dynamically import GetInTouch component
 const GetInTouch = dynamic(() => import('components/Sections/GetInTouch'))
-const Portfolio = ({}: { articles: Article[] }): JSX.Element => {
+
+const Portfolio = ({ articles }: { articles: Article[] }): JSX.Element => {
+  // Define responsive padding values
   const sideBarPadding = useBreakpointValue({ base: '5', md: '8', lg: '14' })
-  const mainContent = useBreakpointValue({
+  const mainContentPadding = useBreakpointValue({
     base: '5',
     md: '14',
     lg: '14',
-    xl: 0,
+    xl: '0',
   })
-  const paddTop = useBreakpointValue({ base: '20', sm: 20, md: 20 })
+  const paddingTop = useBreakpointValue({ base: '20', sm: 20, md: 20 })
+
   return (
     <>
+      {/* Google Analytics Script */}
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_ANALYTICS_ID}`}
       />
@@ -41,8 +46,11 @@ const Portfolio = ({}: { articles: Article[] }): JSX.Element => {
           gtag('config', '${process.env.NEXT_PUBLIC_ANALYTICS_ID}');
         `}
       </Script>
+      {/* OpenGraph Head */}
       <OpenGraphHead />
+      {/* Menu */}
       <Menu />
+      {/* Main Grid */}
       <Grid
         id="mainGrid"
         templateColumns={{
@@ -51,14 +59,15 @@ const Portfolio = ({}: { articles: Article[] }): JSX.Element => {
           xl: 'repeat(5, 1fr)',
         }}
         templateRows={{
-          sm: 'repeat(1, 0)',
+          sm: 'auto', // Adjusted to 'auto' to allow content to determine height
           lg: 'repeat(2, 1fr)',
         }}
         gap={4}
       >
+        {/* Sidebar */}
         <GridItem
           padding={sideBarPadding}
-          marginTop={paddTop}
+          marginTop={paddingTop}
           rowSpan={2}
           colSpan={{ base: 1, sm: 1, md: 1, lg: 1, xl: 2 }}
           display="flex"
@@ -68,14 +77,16 @@ const Portfolio = ({}: { articles: Article[] }): JSX.Element => {
         >
           <Sidebar />
         </GridItem>
+        {/* Main Content */}
         <GridItem
           as="main"
-          padding={mainContent}
+          padding={mainContentPadding}
           rowSpan={2}
           colSpan={{ base: 1, sm: 2, md: 2, lg: 3, xl: 3 }}
           overflow="hidden"
         >
           <Stack w="100" spacing={24}>
+            {/* About Section */}
             <FadeInLayout>
               <Box
                 id="aboutMe"
@@ -93,6 +104,7 @@ const Portfolio = ({}: { articles: Article[] }): JSX.Element => {
                 <About />
               </Box>
             </FadeInLayout>
+            {/* Experience Section */}
             <FadeInLayout>
               <Box
                 id="jobs"
@@ -105,6 +117,7 @@ const Portfolio = ({}: { articles: Article[] }): JSX.Element => {
                 <Experience />
               </Box>
             </FadeInLayout>
+            {/* Featured Works Section */}
             <FadeInLayout>
               <Box
                 id="works"
@@ -117,6 +130,7 @@ const Portfolio = ({}: { articles: Article[] }): JSX.Element => {
                 <FeaturedWorks />
               </Box>
             </FadeInLayout>
+            {/* Get In Touch Section */}
             <FadeInLayout>
               <Box
                 id="contact"
@@ -131,11 +145,13 @@ const Portfolio = ({}: { articles: Article[] }): JSX.Element => {
           </Stack>
         </GridItem>
       </Grid>
+      {/* Scroll Indicator */}
       <ScrollMore />
     </>
   )
 }
 
+// Static props
 export async function getStaticProps() {
   // const res = await fetch('https://dev.to/api/articles?username=klawingco')
   // const articles = await res.json()
