@@ -30,7 +30,7 @@ const Sidebar = () => {
   const MotionStack = motion(Stack)
   const MotionButton = motion(Button)
   const MotionBox = motion(Box)
-  const imageSrc = colorMode === 'light' ? '/photo.jpg' : '/photo.jpg'
+  // const imageSrc = colorMode === 'light' ? '/photo.jpg' : '/photo.jpg'
 
   return (
     <MotionBox
@@ -57,12 +57,12 @@ const Sidebar = () => {
         alignItems={{ xl: 'center' }}
       >
         <MotionStack variants={stagger} spacing={6} w="100">
-          <Image
+          {/* <Image
             borderRadius="full"
             boxSize="150px"
             src={imageSrc}
             alt="Okello Eric"
-          />
+          /> */}
           <MotionText
             variants={fadeInUp}
             delay={1}
