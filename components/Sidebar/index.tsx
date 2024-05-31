@@ -9,7 +9,6 @@ import {
   Box,
   Icon,
   useBreakpointValue,
-  Image,
 } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import styles from './styles.module.css'
