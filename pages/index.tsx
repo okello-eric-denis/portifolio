@@ -21,7 +21,7 @@ import { Article } from 'types/article'
 // Dynamically import GetInTouch component
 const GetInTouch = dynamic(() => import('components/Sections/GetInTouch'))
 
-const Portfolio = ({ articles }: { articles: Article[] }): JSX.Element => {
+const Portfolio = ({}: { articles: Article[] }): JSX.Element => {
   // Define responsive padding values
   const sideBarPadding = useBreakpointValue({ base: '5', md: '8', lg: '14' })
   const mainContentPadding = useBreakpointValue({
